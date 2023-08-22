@@ -10,5 +10,5 @@ import Foundation
 protocol TaskManaglable {
     func addTask(_ task: Task)
     func markTaskComplete(at index: Int)
-    func getAllTasks() -> Task
+    func getAllTasks() -> [Task]
 }
