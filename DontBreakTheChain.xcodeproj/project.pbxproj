@@ -17,6 +17,9 @@
 		828BA6A12A949D10004ABD48 /* StreakManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A02A949D10004ABD48 /* StreakManagable.swift */; };
 		828BA6A32A94A22E004ABD48 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A22A94A22E004ABD48 /* TaskViewModel.swift */; };
 		828BA6A52A94A323004ABD48 /* StreakViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A42A94A323004ABD48 /* StreakViewModel.swift */; };
+		828BA6A72A94A6A8004ABD48 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A62A94A6A8004ABD48 /* TaskView.swift */; };
+		828BA6A92A94AA51004ABD48 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A82A94AA51004ABD48 /* StreakView.swift */; };
+		828BA6AB2A94ACF7004ABD48 /* CompletionGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6AA2A94ACF7004ABD48 /* CompletionGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		828BA6A02A949D10004ABD48 /* StreakManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakManagable.swift; sourceTree = "<group>"; };
 		828BA6A22A94A22E004ABD48 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		828BA6A42A94A323004ABD48 /* StreakViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewModel.swift; sourceTree = "<group>"; };
+		828BA6A62A94A6A8004ABD48 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		828BA6A82A94AA51004ABD48 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		828BA6AA2A94ACF7004ABD48 /* CompletionGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				828BA6972A949B9C004ABD48 /* HomeView.swift */,
+				828BA6A62A94A6A8004ABD48 /* TaskView.swift */,
+				828BA6A82A94AA51004ABD48 /* StreakView.swift */,
+				828BA6AA2A94ACF7004ABD48 /* CompletionGridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,10 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				828BA6A92A94AA51004ABD48 /* StreakView.swift in Sources */,
+				828BA6A72A94A6A8004ABD48 /* TaskView.swift in Sources */,
 				828BA6A12A949D10004ABD48 /* StreakManagable.swift in Sources */,
 				828BA6A32A94A22E004ABD48 /* TaskViewModel.swift in Sources */,
 				828BA69F2A949CBD004ABD48 /* TaskManaglable.swift in Sources */,
 				828BA6982A949B9C004ABD48 /* HomeView.swift in Sources */,
+				828BA6AB2A94ACF7004ABD48 /* CompletionGridView.swift in Sources */,
 				828BA69C2A949C78004ABD48 /* Streak.swift in Sources */,
 				828BA69A2A949C3C004ABD48 /* Task.swift in Sources */,
 				828BA6A52A94A323004ABD48 /* StreakViewModel.swift in Sources */,

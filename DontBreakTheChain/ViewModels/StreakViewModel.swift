@@ -7,7 +7,7 @@
 
 import Foundation
 
-class StreakViewModel: ObservableObject, StreakManagable {
+final class StreakViewModel: ObservableObject, StreakManagable {
     
     @Published private var currentStreak: Streak = Streak()
     
