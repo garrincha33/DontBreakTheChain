@@ -14,7 +14,12 @@ struct TaskView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            // Input Section
+            
+            Text("Dont Break The Chain")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.top, 20)
+            
             HStack {
                 TextField("Enter new task", text: $newTaskTitle)
                     .padding()
@@ -25,6 +30,7 @@ struct TaskView: View {
                     let newTask = Task(title: newTaskTitle)
                     taskViewModel.addTask(newTask)
                     newTaskTitle = ""
+                    self.endEditing()
                 }
                 .padding()
                 .background(
@@ -33,16 +39,15 @@ struct TaskView: View {
                                    endPoint: .trailing)
                 )
                 .foregroundColor(.white)
-                .cornerRadius(15.0) // Increased corner radius for a smoother look
-                .shadow(radius: 5)  // Added shadow for a slight elevation effect
+                .cornerRadius(15.0)
+                .shadow(radius: 5)
             }
             .padding(.horizontal)
 
             Spacer().frame(height: 10)
-
-            // Tasks List
+            
             List {
-                ForEach(taskViewModel.getAllTasks()) { task in
+                ForEach(taskViewModel.tasks) { task in
                     VStack {
                         HStack {
                             Text(task.title)
@@ -54,17 +59,29 @@ struct TaskView: View {
                         }
                         .contentShape(Rectangle())
                         .onTapGesture {
-                            if let taskIndex = taskViewModel.getAllTasks().firstIndex(of: task) {
-                                taskViewModel.markTaskComplete(at: taskIndex)
-                            }
+                            if let taskIndex = taskViewModel.tasks.firstIndex(of: task) {
+                                    taskViewModel.increaseCompletionCount(at: taskIndex)
+                                }
                         }
                         if let taskIndex = taskViewModel.getAllTasks().firstIndex(of: task) {
                             CompletionGridView(completionCount: task.completionCount, taskIndex: taskIndex)
                         }
                     }
                 }
+                .onDelete(perform: removeTasks)
             }
         }
         .padding(.bottom, 15)
     }
+    
+    private func removeTasks(at offSets: IndexSet) {
+        taskViewModel.tasks.remove(atOffsets: offSets)
+    }
 }
+
+extension View {
+    func endEditing() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+

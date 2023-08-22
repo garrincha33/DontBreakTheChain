@@ -20,6 +20,8 @@
 		828BA6A72A94A6A8004ABD48 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A62A94A6A8004ABD48 /* TaskView.swift */; };
 		828BA6A92A94AA51004ABD48 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6A82A94AA51004ABD48 /* StreakView.swift */; };
 		828BA6AB2A94ACF7004ABD48 /* CompletionGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6AA2A94ACF7004ABD48 /* CompletionGridView.swift */; };
+		828BA6AD2A94B8AF004ABD48 /* Storageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6AC2A94B8AF004ABD48 /* Storageable.swift */; };
+		828BA6AF2A94B8CC004ABD48 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828BA6AE2A94B8CC004ABD48 /* UserDefaultsStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		828BA6A62A94A6A8004ABD48 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		828BA6A82A94AA51004ABD48 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
 		828BA6AA2A94ACF7004ABD48 /* CompletionGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionGridView.swift; sourceTree = "<group>"; };
+		828BA6AC2A94B8AF004ABD48 /* Storageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storageable.swift; sourceTree = "<group>"; };
+		828BA6AE2A94B8CC004ABD48 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		828BA6962A949B8C004ABD48 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				828BA6AE2A94B8CC004ABD48 /* UserDefaultsStorage.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			children = (
 				828BA69E2A949CBD004ABD48 /* TaskManaglable.swift */,
 				828BA6A02A949D10004ABD48 /* StreakManagable.swift */,
+				828BA6AC2A94B8AF004ABD48 /* Storageable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				828BA6A92A94AA51004ABD48 /* StreakView.swift in Sources */,
+				828BA6AD2A94B8AF004ABD48 /* Storageable.swift in Sources */,
 				828BA6A72A94A6A8004ABD48 /* TaskView.swift in Sources */,
 				828BA6A12A949D10004ABD48 /* StreakManagable.swift in Sources */,
 				828BA6A32A94A22E004ABD48 /* TaskViewModel.swift in Sources */,
@@ -220,6 +227,7 @@
 				828BA6982A949B9C004ABD48 /* HomeView.swift in Sources */,
 				828BA6AB2A94ACF7004ABD48 /* CompletionGridView.swift in Sources */,
 				828BA69C2A949C78004ABD48 /* Streak.swift in Sources */,
+				828BA6AF2A94B8CC004ABD48 /* UserDefaultsStorage.swift in Sources */,
 				828BA69A2A949C3C004ABD48 /* Task.swift in Sources */,
 				828BA6A52A94A323004ABD48 /* StreakViewModel.swift in Sources */,
 				828BA6852A949AB3004ABD48 /* DontBreakTheChainApp.swift in Sources */,
