@@ -11,7 +11,7 @@ import SwiftUI
 struct DontBreakTheChainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
