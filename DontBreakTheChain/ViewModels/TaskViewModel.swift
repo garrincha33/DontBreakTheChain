@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TaskViewModel: ObservableObject, TaskManaglable {
+final class TaskViewModel: ObservableObject, TaskManaglable {
     
     @Published private var tasks: [Task] = []
     
@@ -17,7 +17,9 @@ class TaskViewModel: ObservableObject, TaskManaglable {
     
     func markTaskComplete(at index: Int) {
         tasks[index].isCompleted = true
+        tasks[index].completionCount += 1
     }
+
     
     func getAllTasks() -> [Task] {
         return tasks
