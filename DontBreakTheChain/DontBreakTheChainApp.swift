@@ -9,8 +9,8 @@ import SwiftUI
 
 @main
 struct DontBreakTheChainApp: App {
-    let taskViewModel = TaskViewModel()
     let streakViewModel = StreakViewModel()
+    var taskViewModel = TaskViewModel()
 
     var body: some Scene {
         WindowGroup {

@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Streak {
+struct Streak: Codable {
     var days: Int = 0
 }
