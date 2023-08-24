@@ -48,16 +48,14 @@ final class TaskViewModel: ObservableObject {
     }
     
     func increaseCompletionCount(at index: Int) {
-            tasks[index].completionCount += 1
-            tasks[index].isCompleted = tasks[index].completionCount == 7
-            saveTasks()
-        }
+        tasks[index].completionCount += 1
+        tasks[index].isCompleted = tasks[index].completionCount == 7
+        saveTasks()
+    }
     
     func decreaseCompletionCount(to value: Int, at index: Int) {
         tasks[index].completionCount = value
         tasks[index].isCompleted = tasks[index].completionCount == 7
         saveTasks()
     }
-
-
 }

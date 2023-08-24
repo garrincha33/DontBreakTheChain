@@ -10,6 +10,8 @@ import SwiftUI
 
 struct CompletionGridView: View {
     @EnvironmentObject var taskViewModel: TaskViewModel
+    @EnvironmentObject var streakViewModel: StreakViewModel
+
     let completionCount: Int
     let taskIndex: Int
 
@@ -28,10 +30,13 @@ struct CompletionGridView: View {
                         .onTapGesture {
                             if index == completionCount {
                                 taskViewModel.increaseCompletionCount(at: taskIndex)
+                                streakViewModel.incrementStreak()
                             } else if index < completionCount {
                                 taskViewModel.decreaseCompletionCount(to: index, at: taskIndex)
+                                streakViewModel.decrementStreak()
                             }
                         }
+
                 }
             }
         }
